@@ -52,7 +52,7 @@ def forbidden(error):
 @app.errorhandler(404)
 def not_found(error) -> str:
     """Not found handler"""
-    return jsonify({"error": "Not found"}), 404
+    return jsonify({"error": "Forbidden"}), 404
 
 
 if __name__ == "__main__":
